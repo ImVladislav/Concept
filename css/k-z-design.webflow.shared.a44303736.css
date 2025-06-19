@@ -2256,7 +2256,7 @@ textarea.w-select {
   --secondary: #e3e3e3;
   --bg-case-1: #f1f1f1;
   --ligth-gray: whitesmoke;
-  --accent: #fc814a;
+  --accent: #1f53ff;
   --btn-hover-light: #f2f2f2;
   --transparent: #0000;
   --white-2: white;
@@ -5780,7 +5780,7 @@ img {
 }
 
 .p-16.orange {
-  color: #fc814a;
+  color: #1f53ff;
 }
 
 .shadow-txt-slider {
@@ -9952,3 +9952,7 @@ img {
     grid-column-end: 2;
   }
 }
+/* 
+svg {
+  fill: var(--accent);
+} */
