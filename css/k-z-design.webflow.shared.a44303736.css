@@ -5857,9 +5857,9 @@ img {
   z-index: 10;
   grid-column-gap: 0.5em;
   grid-row-gap: 0.5em;
-  color: var(--accent);
+  /* color: var(--accent); */
   text-align: left;
-  background-color: #262930;
+  /* background-color: #262930; */
   border-radius: 0;
   justify-content: center;
   align-items: center;
