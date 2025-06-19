@@ -3318,7 +3318,7 @@ img {
 }
 
 .case-item-content-box {
-  cursor: pointer;
+  /* cursor: pointer; */
   transform-style: preserve-3d;
   flex-flow: column;
   justify-content: flex-end;
