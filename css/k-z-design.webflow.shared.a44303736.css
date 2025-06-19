@@ -2679,6 +2679,7 @@ img {
   align-items: center;
   display: flex;
   position: relative;
+  height: 100vh;
 }
 
 .hero-logo {
