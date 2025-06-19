@@ -2537,7 +2537,7 @@ img {
 
 .nav-primary_component {
   z-index: 1000;
-  background-color: var(--bg-dark);
+  background-color: var(--white);
   width: 100%;
   display: block;
   position: sticky;
@@ -2627,7 +2627,7 @@ img {
 }
 
 .footer1_link {
-  color: var(--white);
+  color: var(--bg-dark);
   font-size: 1em;
   font-weight: 400;
   text-decoration: none;
@@ -2655,7 +2655,7 @@ img {
 
 .footer_component {
   position: relative;
-  background-color: var(--bg-dark);
+  background-color: var(--white);
 }
 
 .footer1_link_wrapper {
@@ -3822,8 +3822,8 @@ img {
 }
 
 .social-link-box {
-  border: 1px solid var(--white);
-  color: var(--white);
+  border: 1px solid var(--icon-gray);
+  color: var(--bg-dark);
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -3833,8 +3833,8 @@ img {
 }
 
 .social-link-box:hover {
-  background-color: var(--white);
-  color: var(--bg-dark);
+  background-color: var(--bg-dark);
+  color: var(--white);
 }
 
 .social-link-box.is-white {
