@@ -2685,7 +2685,7 @@ img {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 50%;
+  width: 40%;
   transform: translateY(-50%);
 }
 
