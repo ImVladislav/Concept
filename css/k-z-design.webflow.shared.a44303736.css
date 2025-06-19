@@ -6331,7 +6331,9 @@ img {
 }
 
 .circle-orange {
-  background-color: #fc814a;
+  background: #1f53ff;
+
+  /* background-color: #fc814a; */
   border-radius: 6.25em;
   justify-content: center;
   align-items: center;
