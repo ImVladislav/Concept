@@ -6158,8 +6158,8 @@ img {
   grid-column-gap: 0em;
   grid-row-gap: 0em;
   color: var(--white);
-  background-color: #181b22;
-  border: 1px solid #181b22;
+  background-color: #1f53ff;
+  border: 1px solid #1f53ff;
   border-radius: 3em;
   justify-content: flex-start;
   align-items: center;
@@ -6218,7 +6218,7 @@ img {
 .new-btn-whi {
   grid-column-gap: 0em;
   grid-row-gap: 0em;
-  color: #121212;
+  color: #1f53ff;
   background-color: #fff;
   border: 1px solid #181b22;
   border-radius: 3em;
@@ -9956,3 +9956,7 @@ img {
 svg {
   fill: var(--accent);
 } */
+
+.arrow-btn svg {
+  fill: white;
+}
