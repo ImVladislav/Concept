@@ -2684,7 +2684,7 @@ img {
 
 .hero-logo {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 0;
   width: 25%;
   transform: translateY(-50%);
@@ -8873,6 +8873,7 @@ img {
     width: 100%;
     margin-top: 3.75em;
     padding-bottom: 0;
+    height: 80vh;
   }
 
   .h-1 {
