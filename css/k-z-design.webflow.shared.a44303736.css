@@ -2706,7 +2706,7 @@ img {
 @media (min-width: 1040px) {
   .hero-logo {
     top: 45%;
-    left: 50%;
+    left: 60%;
     width: 30%;
     transform: translateY(-50%);
   }
@@ -8893,9 +8893,10 @@ img {
 
   .hero-content.is-0-9 {
     width: 100%;
-    margin-top: 10em;
+    /* margin-top: 10em; */
     padding-bottom: 0;
     height: 80vh;
+    justify-content: flex-end;
   }
 
   .h-1 {
