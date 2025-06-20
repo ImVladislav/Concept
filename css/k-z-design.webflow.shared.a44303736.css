@@ -2686,10 +2686,10 @@ img {
   position: absolute;
   top: 20%;
   left: 50%;
-  width: 75%;
+  width: 60%;
   transform: translate(-50%, -50%);
   @media (min-width: 460px) {
-    width: 80%;
+    width: 60%;
   }
   @media (min-width: 768px) {
     top: 45%;
