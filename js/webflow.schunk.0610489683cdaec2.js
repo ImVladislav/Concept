@@ -2974,61 +2974,8 @@
             let n = e.closest(".w-form");
             t ? n.addClass("w-form-loading") : n.removeClass("w-form-loading");
           }
-          function S(t, n) {
-            var a = null;
-            return (
-              (n = n || {}),
-              t
-                .find(
-                  ':input:not([type="submit"]):not([type="file"]):not([type="button"])'
-                )
-                .each(function (i, o) {
-                  var l,
-                    r,
-                    c,
-                    d,
-                    s,
-                    f = e(o),
-                    u = f.attr("type"),
-                    p =
-                      f.attr("data-name") ||
-                      f.attr("name") ||
-                      "Field " + (i + 1);
-                  p = encodeURIComponent(p);
-                  var E = f.val();
-                  if ("checkbox" === u) E = f.is(":checked");
-                  else if ("radio" === u) {
-                    if (null === n[p] || "string" == typeof n[p]) return;
-                    E =
-                      t
-                        .find('input[name="' + f.attr("name") + '"]:checked')
-                        .val() || null;
-                  }
-                  "string" == typeof E && (E = e.trim(E)),
-                    (n[p] = E),
-                    (a =
-                      a ||
-                      ((l = f),
-                      (r = u),
-                      (c = p),
-                      (d = E),
-                      (s = null),
-                      "password" === r
-                        ? (s = "Passwords cannot be submitted.")
-                        : l.attr("required")
-                        ? d
-                          ? T.test(l.attr("type")) &&
-                            !m.test(d) &&
-                            (s = "Please enter a valid email address for: " + c)
-                          : (s = "Please fill out the required field: " + c)
-                        : "g-recaptcha-response" !== c ||
-                          d ||
-                          (s = "Please confirm you're not a robot."),
-                      s));
-                }),
-              a
-            );
-          }
+          
+          
           function A(t) {
             var n = {};
             return (
