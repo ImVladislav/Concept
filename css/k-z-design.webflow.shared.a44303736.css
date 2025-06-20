@@ -8792,7 +8792,7 @@ img {
   }
 
   .accordion-item-title---brix {
-    white-space: pre-wrap;
+    white-space: normal;
     font-size: 1.25em;
   }
 
