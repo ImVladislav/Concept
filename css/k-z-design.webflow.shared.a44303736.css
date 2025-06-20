@@ -2703,6 +2703,14 @@ img {
     transform: translateY(-50%);
   }
 }
+@media (min-width: 1040px) {
+  .hero-logo {
+    top: 45%;
+    left: 50%;
+    width: 30%;
+    transform: translateY(-50%);
+  }
+}
 
 .title-concept {
   text-transform: uppercase;
@@ -7006,7 +7014,7 @@ img {
   }
 
   .hero-content.is-0-9 {
-    margin-top: 2.5em;
+    margin-top: 15em;
     transform: none;
   }
 
