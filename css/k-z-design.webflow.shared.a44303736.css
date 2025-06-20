@@ -2684,10 +2684,20 @@ img {
 
 .hero-logo {
   position: absolute;
-  top: 40%;
-  right: 0;
-  width: 25%;
-  transform: translateY(-50%);
+  top: 20%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 460px) {
+    width: 80%;
+  }
+  @media (min-width: 768px) {
+    top: 45%;
+    left: 60%;
+
+    width: 25%;
+    transform: translateY(-50%);
+  }
 }
 
 .title-concept {
