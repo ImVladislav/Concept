@@ -1,0 +1,54 @@
+<!-- Нова форма для заміни старої -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("custom-contact-form");
+    const nameInput = form.querySelector("#name");
+    const emailInput = form.querySelector("#email");
+    const messageInput = form.querySelector("#text");
+    const submitButton = form.querySelector("#submit");
+    const realSubmit = form.querySelector("#form-p");
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function validate() {
+      const isNameValid = nameInput.value.trim().length > 0;
+      const isEmailValid = isValidEmail(emailInput.value.trim());
+      const isValid = isNameValid && isEmailValid;
+
+      submitButton.style.pointerEvents = isValid ? "auto" : "none";
+      submitButton.classList.toggle("submit-disabled-state", !isValid);
+      realSubmit.disabled = !isValid;
+    }
+
+    nameInput.addEventListener("input", validate);
+    emailInput.addEventListener("input", validate);
+
+    submitButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      validate();
+
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+      const message = messageInput.value.trim();
+
+      if (!name || !isValidEmail(email)) {
+        return;
+      }
+
+      // Реальна відправка
+      console.log("Відправка:", { name, email, message });
+
+      // Симуляція сабміту через інпут
+      realSubmit.click();
+
+      // Або заміна на fetch/redirect:
+      // fetch("/send", { method: "POST", body: JSON.stringify(...) })
+
+      // form.submit(); // якщо хочеш реальну відправку без js
+    });
+
+    validate(); // Перша перевірка
+  });
+</script>
