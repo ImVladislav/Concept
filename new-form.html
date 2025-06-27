@@ -1,4 +1,3 @@
-<!-- Нова форма для заміни старої -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("custom-contact-form");
@@ -37,18 +36,11 @@
         return;
       }
 
-      // Реальна відправка
       console.log("Відправка:", { name, email, message });
 
-      // Симуляція сабміту через інпут
       realSubmit.click();
-
-      // Або заміна на fetch/redirect:
-      // fetch("/send", { method: "POST", body: JSON.stringify(...) })
-
-      // form.submit(); // якщо хочеш реальну відправку без js
     });
 
-    validate(); // Перша перевірка
+    validate();
   });
 </script>
