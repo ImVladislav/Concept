@@ -3782,5 +3782,49 @@
         });
       });
     </script>
+    
+    <style>
+      /* Виправлення для submit-label на великому екрані */
+      .submit-label {
+        width: fit-content !important;
+        display: flex !important;
+        position: relative;
+        overflow: visible !important;
+      }
+      
+      .submit-label button {
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: unset !important;
+        min-width: fit-content !important;
+      }
+      
+      .submit-label .wrap-txt-arrow {
+        display: flex !important;
+        align-items: center;
+        gap: 0.5em;
+        white-space: nowrap !important;
+        overflow: visible !important;
+      }
+      
+      .submit-label .ttstx-bd {
+        display: block !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      /* Додаткові стилі для забезпечення видимості тексту */
+      .new-btn-whi._1e.is-form {
+        min-width: auto !important;
+        width: fit-content !important;
+      }
+      
+      .new-btn-whi._1e.is-form .wrap-txt-arrow {
+        width: auto !important;
+        min-width: fit-content !important;
+      }
+    </style>
   </body>
 </html>
